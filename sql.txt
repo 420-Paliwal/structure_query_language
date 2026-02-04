@@ -3,3 +3,10 @@
 SELECT DISTINCT dept
 FROM employee
 ORDER BY dept;
+
+2 => Highest Salary 
+
+SELECT *
+FORM employee
+ORDER BY Salary DESC
+LIMIT 1;
