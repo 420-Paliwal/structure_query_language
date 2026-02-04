@@ -1,0 +1,5 @@
+1 => unique dept 
+
+SELECT DISTINCT dept
+FROM employee
+ORDER BY dept;
