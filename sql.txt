@@ -27,8 +27,8 @@ ORDER BY dept, Salary DESC
 5 => Second highest salary nikaalo (sirf SQL)
 
 SELECT salary FROM employee
-ORDER BY Salary
-LIMIT 2
+ORDER BY Salary DESC
+LIMIT 1
 OFFSET 1;
 
 6 => Unique (dept, salary) combinations dikhao
