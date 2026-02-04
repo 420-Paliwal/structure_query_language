@@ -18,3 +18,20 @@ FROM employee
 WHERE dept = 'HR'
 ORDER BY Salary;
 
+4 => Employees ko dept wise sort karo,
+aur har dept me salary DESC order me
+
+SELECT * FROM employee
+ORDER BY dept, Salary DESC
+
+5 => Second highest salary nikaalo (sirf SQL)
+
+SELECT salary FROM employee
+ORDER BY Salary
+LIMIT 2
+OFFSET 1;
+
+6 => Unique (dept, salary) combinations dikhao
+ 
+SELECT DISTINCT dept, Salary FROM employee
+ORDER BY dept, Salary
