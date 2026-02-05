@@ -72,3 +72,10 @@ FROM employee
 WHERE dept = 'IT'
     AND salary > 50000
     AND name LIKE 'M%'
+
+12 => Employees jo HR ya Finance dept me hain
+
+SELECT *
+FORM employee
+WHERE dept IN ('HR', 'Finance')
+
