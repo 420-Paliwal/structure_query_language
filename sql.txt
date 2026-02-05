@@ -33,5 +33,15 @@ OFFSET 1;
 
 6 => Unique (dept, salary) combinations dikhao
  
-SELECT DISTINCT dept, Salary FROM employee
+SELECT DISTINCT dept, Salary 
+FROM employee
 ORDER BY dept, Salary
+
+7 => IT ya HR dept ke employees jinki salary 40000–60000 ke beech ho
+aur naam R se start hota ho
+
+SELECT * 
+FROM employee
+WHERE (dept = 'IT' OR dept = 'HR')
+    AND salary BETWEEN 40000 AND 60000
+    AND name LIKE 'R%'
