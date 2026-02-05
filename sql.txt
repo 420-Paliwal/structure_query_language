@@ -79,3 +79,8 @@ SELECT *
 FORM employee
 WHERE dept IN ('HR', 'Finance')
 
+13 => Employees jinki salary NULL hai
+
+SELECT *
+FROM employee
+WHERE salary IS NULL;
