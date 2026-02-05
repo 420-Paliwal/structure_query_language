@@ -63,3 +63,12 @@ WHERE salary BETWEEN 40000 AND 60000
 SELECT *
 FROM employee
 WHERE name LIKE 'R%'
+
+11 => IT department ke employees jinki salary 50000 se zyada ho
+aur naam 'M' se start hota ho
+
+SELECT *
+FROM employee
+WHERE dept = 'IT'
+    AND salary GREATER THAN 50000
+    AND name LIKE 'M%'
