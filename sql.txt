@@ -111,3 +111,10 @@ SELECT dept, COUNT(*) AS emp_count
 FROM employee 
 GROUP BY dept
 HAVING COUNT(*) >= 2;
+
+18 => Har department ka highest salary nikaalo
+
+SELECT dept, MAX(salary) AS max_salary
+FROM employee
+GROUP BY dept;
+
