@@ -126,3 +126,12 @@ WHERE salary = (
     SELECT MAX(salary)
     FROM employee
 )
+
+20 => Har department ka highest paid employee
+
+SELECT *
+FROM employee
+WHERE salary = (
+    SELECT dept, MAX(salary)
+    FROM EM
+)
