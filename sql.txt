@@ -45,3 +45,9 @@ FROM employee
 WHERE (dept = 'IT' OR dept = 'HR')
     AND salary BETWEEN 40000 AND 60000
     AND name LIKE 'R%'
+
+8 => IT ya HR department ke employees
+
+SELECT *
+FROM employee
+WHERE dept = 'IT' OR dept = 'HR'
