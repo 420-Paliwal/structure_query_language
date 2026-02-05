@@ -92,4 +92,8 @@ SELECT *
 FROM employee
 WHERE dept NOT IN ('IT')
     AND salary > 40000
-    
+
+15 => Total employees kitne hain?
+
+SELECT COUNT(*)
+FROM employee
