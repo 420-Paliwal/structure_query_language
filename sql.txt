@@ -103,3 +103,11 @@ FROM employee
 SELECT dept, SUM(salary)
 FROM employee
 GROUP BY dept;
+
+17 => Sirf wahi departments dikhao
+jaha employees ≥ 2 hain
+
+SELECT dept, COUNT(name)
+FROM employee
+GROUP BY COUNT(name)
+HAVING >= 2
