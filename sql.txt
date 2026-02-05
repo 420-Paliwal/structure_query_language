@@ -97,3 +97,9 @@ WHERE dept NOT IN ('IT')
 
 SELECT COUNT(*)
 FROM employee
+
+16 => Har department ka total salary
+
+SELECT dept, SUM(salary)
+FROM employee
+GROUP BY dept;
