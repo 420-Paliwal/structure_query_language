@@ -70,5 +70,5 @@ aur naam 'M' se start hota ho
 SELECT *
 FROM employee
 WHERE dept = 'IT'
-    AND salary GREATER THAN 50000
+    AND salary > 50000
     AND name LIKE 'M%'
