@@ -84,3 +84,11 @@ WHERE dept IN ('HR', 'Finance')
 SELECT *
 FROM employee
 WHERE salary IS NULL;
+
+14 => Employees jo IT dept me nahi hain
+aur jinki salary 40000 se zyada hai
+
+SELECT *
+FROM employee
+WHERE dept NOT IN ('IT)
+    AND salary > 40000
