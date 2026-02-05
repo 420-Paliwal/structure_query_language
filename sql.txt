@@ -76,7 +76,7 @@ WHERE dept = 'IT'
 12 => Employees jo HR ya Finance dept me hain
 
 SELECT *
-FORM employee
+FROM employee
 WHERE dept IN ('HR', 'Finance')
 
 13 => Employees jinki salary NULL hai
@@ -90,5 +90,6 @@ aur jinki salary 40000 se zyada hai
 
 SELECT *
 FROM employee
-WHERE dept NOT IN ('IT)
+WHERE dept NOT IN ('IT')
     AND salary > 40000
+    
