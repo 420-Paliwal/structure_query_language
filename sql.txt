@@ -175,7 +175,7 @@ ON e.dept_id = d.dept_id;
 25 => use SELF JOIN where show employee and their manager
 
 SELECT e.name AS employee,
-       m.name AS employee
+       m.name AS manager
 FROM employee e 
 LEFT JOIN employee m 
 ON e.manager_id = m.emp_id;
