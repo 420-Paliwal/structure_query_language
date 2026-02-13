@@ -142,3 +142,11 @@ SELECT e.emp_id, e.name, e.dept_name
 FROM employee e
 INNER JOIN department d 
 ON e.dept_id = d.dept_id
+
+22 => Employee ka name aur dept_name dikhao
+(sirf jinka department exist karta ho)
+
+SELECT e.name, d.dept_name
+FROM employee e 
+INNER JOIN department d
+ON e.dept_id = d.dept_id
