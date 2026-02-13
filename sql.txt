@@ -135,3 +135,10 @@ WHERE salary = (
     SELECT dept, MAX(salary)
     FROM EM
 )
+
+21 => use Inner join to show employee with their departments
+
+SELECT e.emp_id, e.name, e.dept_name
+FROM employee e
+INNER JOIN department d 
+ON e.dept_id = d.dept_id
