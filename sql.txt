@@ -157,3 +157,10 @@ SELECT e.emp_id, e.name, e.dept_id, d.dept_name
 FROM employee e
 LEFT JOIN department d 
 ON e.dept_id = d.dept_id
+
+24 => use Right join to show employee name and department 
+
+SELECT e.name, d.dept_name
+FROM employee e 
+RIGHT JOIN department d 
+ON e.dept_id = d.dept_id
