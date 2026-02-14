@@ -219,3 +219,13 @@ WHERE salary = (
         FROM employee
     )
 );
+
+30 => Har department ke minimum salary employees dikhao
+
+SELECT * 
+FROM employee e
+WHERE salary = (
+    SELECT MIN(salary)
+    FROM employee
+    WHERE dept = e.dept
+);
