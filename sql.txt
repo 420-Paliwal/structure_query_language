@@ -229,3 +229,13 @@ WHERE salary = (
     FROM employee
     WHERE dept = e.dept
 );
+
+31 => Har department ke average salary se zyada kamaane wale employees dikhao
+
+SELECT * 
+FROM employee
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM employee
+    WHERE dept = e.dept
+);
