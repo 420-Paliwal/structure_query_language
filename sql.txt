@@ -197,3 +197,25 @@ WHERE salary > (
     SELECT AVG(salary)
     FROM employee
 );
+
+28 => Second highest salary nikaalo (subquery use karke)
+
+SELECT *
+FROM employee
+WHERE salary < (
+    SELECT MAX(salary)
+    FROM employee
+)
+
+29 => Second highest salary employee nikaalo (subquery use karke)
+
+SELECT *
+FROM employee
+WHERE salary = (
+    SELECT MAX(salary)
+    FROM employee
+    WHERE salary < (
+        SELECT MAX(salary)
+        FROM employee
+    )
+);
