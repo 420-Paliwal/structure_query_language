@@ -188,3 +188,12 @@ WHERE salary = (
     SELECT MAX(salary)
     FROM employee
 );
+
+27 => Average salary se zyada kamaane wale employees
+
+SELECT *
+FROM employee
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM employee
+);
