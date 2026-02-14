@@ -179,3 +179,12 @@ SELECT e.name AS employee,
 FROM employee e 
 LEFT JOIN employee m 
 ON e.manager_id = m.emp_id;
+
+26 => Highest salary wale employees dikhao
+
+SELECT *
+FROM employee
+WHERE salary = (
+    SELECT MAX(salary)
+    FROM employee
+);
